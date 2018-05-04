@@ -1,12 +1,16 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #b8b894;
+	background-color: #c2c2a3;
 }
 
 img {
 	display: block;
 	width: 100%;
+}
+
+p {
+	font-family: 'Questrial', sans-serif;
 }
 
 	/*header*/
@@ -34,6 +38,7 @@ h1 {
 	margin: 5px 0px;
 	padding-right: 10px;
 	font-family: 'Lato', sans-serif;
+	color: black;
 }
 
 h3 {
@@ -47,25 +52,64 @@ h3 {
 
 }
 
-	/*main*/
+	/*Main--Jumbotron*/
 
 h4 {
 	font-family: 'Source Code Pro', monospace;
 }
 
-p {
-	font-family: 'Questrial', sans-serif;
+#jumbotron p {
+	text-align: center;
+	margin: 30px 10px;
+	padding: 10px 3px;
+	border: solid #fff 1px;
+	border-radius: 2px;
+	box-shadow: 3px 5px gray;
+	background-color: #fff; 
 }
 
 figure {
   margin: 0;
   padding: 0;
+  font-size: .8em;
 }
 
-li, a{
+	/*Main--Featured Work*/
+h2 {
+	text-align: center;
+}
+
+ul{
+	padding: 10px;
+}
+li {
+	margin: 10px;
 	list-style: none;
+	border: solid #fff 1px;
+	border-radius: 2px;
+	box-shadow: 3px 5px gray;
+
+	text-align: center;
+}
+
+a {
 	text-decoration: none;
 	color: black;
 }
 
+	/*Footer*/
+footer {
+	margin: 0px;
+	display: grid;
+	grid-template-columns: 2fr;
+	align-items: center
+}
 
+.socials {
+	grid-column: 2;
+}
+
+.socials a {
+	padding: 0 10px;
+	font-size: 25px;
+}
