@@ -102,7 +102,7 @@ footer {
 	margin: 0px;
 	display: grid;
 	grid-template-columns: 2fr;
-	align-items: center
+	align-items: center;
 }
 
 .socials {
@@ -113,3 +113,29 @@ footer {
 	padding: 0 10px;
 	font-size: 25px;
 }
+
+@media screen and (min-width: 600px){
+	ul {
+		width: 100%;
+		display: flex;
+		flex: row;
+		justify-content: space-around;
+		flex-flow: wrap;
+	}
+
+	li {
+		width: 45%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+body {
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+li{
+	width: 30%;
+}
+}*/
