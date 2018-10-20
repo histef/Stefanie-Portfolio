@@ -6,13 +6,12 @@ body {
   background-color: $bg-color;
 }
 
-// img {
-//   display: block;
-//   width: 100%;
-// }
-
 h4, p {
   font-family: $secondary-font;
+}
+
+img {
+  width: 100%;
 }
 
   /*header*/
@@ -62,7 +61,7 @@ header {
 h2 {
   text-align: center;
   font-family: $accent-font;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 h4 {
@@ -71,10 +70,12 @@ h4 {
 }
 
 ul{
-  padding: 0 10px;
+  padding: 10px;
+ background: url(/img/pexels-photo-861191.jpeg) no-repeat center center fixed;
 }
 
 li {
+  background-color: $dark-purp;
   margin: 20px 10px;
   list-style: none;
   border: solid #fff 5px;
@@ -83,11 +84,13 @@ li {
   img {
     height: 50%;
   }
-}
-
-a {
+  a {
   text-decoration: none;
-  color: black;
+  color: white;
+  }
+  p {
+    color: white;
+  }
 }
 
   /*Footer*/
