@@ -11,13 +11,13 @@ $primary-color: #6a847c; //dark green
 $secondary-color: #b9cab6; //light green
 $light-color: #decead; //light beige
 $accent-color: #c19f7c; //dark beige
-$dark-purp: #685a63 //purple
+$dark-purp: #685a63; //purple
 
 //Functions
-// @function set-text-color($bg-color){
-//   @if(lightness($bg-color) > 50){
-//     @return #000;
-//   } @else {
-//     @return #fff;
-//   }
-// }
+@function set-text-color($bg-color){
+  @if(lightness($bg-color) > 50){
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

@@ -4,74 +4,46 @@ body {
   padding: 0;
   background-color: #fff; }
 
-img {
-  display: block;
-  width: 100%; }
-
 h4, p {
   font-family: "questrial", sans-serif; }
 
 /*header*/
 header {
+  background: url(/img/pexels-photo-91884.jpeg) no-repeat center center fixed;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
-  max-height: 130px; }
+  height: 450px;
+  color: white; }
 
 .logo {
   grid-column: 1;
   grid-row: 1;
   -ms-flex-item-align: start;
   align-self: start;
-  max-width: 75px; }
+  max-width: 55px;
+  padding: 10px; }
 
-h1 {
+.title-card {
+  background-color: #decead;
+  border: 7px solid #fff;
   grid-column: 2;
-  grid-row: 1;
-  justify-self: end;
-  -ms-flex-item-align: start;
-  align-self: start;
-  margin: 5px 0;
-  padding-right: 10px;
-  font-family: "lato", sans-serif;
-  color: black; }
-
-h3 {
-  grid-column: 2;
-  grid-row: 1;
-  justify-self: end;
-  -ms-flex-item-align: end;
-  align-self: end;
-  margin: 5px 0;
-  padding: 0 10px 0 0;
-  font-family: "dancing script", cursive;
-  font-size: 1.3em; }
-
-/*Main--Jumbotron*/
-#jumbotron {
-  position: relative;
-  text-align: center; }
-  #jumbotron h2 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-family: "lato", sans-serif;
-    font-size: 2.5em;
+  grid-row: 2;
+  justify-items: center;
+  color: black;
+  padding: 15px; }
+  .title-card h1 {
     text-align: center;
-    opacity: 0.3;
-    text-transform: uppercase; }
-
-figure {
-  margin: 0;
-  padding: 0;
-  font-size: .8em; }
-
-figcaption {
-  text-align: left; }
+    text-transform: uppercase;
+    font-family: "questrial", sans-serif;
+    margin-bottom: 0; }
+  .title-card h3 {
+    font-family: "dancing script", cursive;
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 5px; }
 
 /*Main--Featured Work*/
 h2 {

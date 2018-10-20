@@ -6,10 +6,10 @@ body {
   background-color: $bg-color;
 }
 
-img {
-  display: block;
-  width: 100%;
-}
+// img {
+//   display: block;
+//   width: 100%;
+// }
 
 h4, p {
   font-family: $secondary-font;
@@ -17,70 +17,45 @@ h4, p {
 
   /*header*/
 header {
+  background: url(/img/pexels-photo-91884.jpeg) no-repeat center center fixed;
   display:grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
-  max-height: 130px;
+  height: 450px;
+  color: white;
 }
 
 .logo {
   grid-column: 1;
   grid-row: 1;
   align-self: start;
-  max-width: 75px;
+  max-width: 55px;
+  padding: 10px;
 }
 
-h1 {
+.title-card {
+  background-color: $light-color;
+  border: 7px solid $bg-color;
   grid-column: 2;
-  grid-row: 1;
-  justify-self: end;
-  align-self: start;
-  margin: 5px 0;
-  padding-right: 10px;
-  font-family: $main-font;
+  grid-row: 2;
+  justify-items: center;
   color: black;
-}
-
-h3 {
-  grid-column: 2;
-  grid-row: 1;
-  justify-self: end;
-  align-self: end;
-  margin: 5px 0;
-  padding: 0 10px 0 0;
-  font-family: $accent-font;
-  font-size: 1.3em;
-}
-
-  /*Main--Jumbotron*/
-#jumbotron {
-  position: relative;
-  text-align: center;
-  h2 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: $main-font;
-    font-size: 2.5em;
+  padding: 15px;
+  h1 {
     text-align: center;
-    opacity: 0.3;
     text-transform: uppercase;
+    font-family: $secondary-font;
+    margin-bottom: 0;
   }
-}
-
-
-
-figure {
-  margin: 0;
-  padding: 0;
-  font-size: .8em;
-}
-
-figcaption {
-  text-align: left;
+  h3 {
+    font-family: $accent-font;
+    font-size: 1.7em;
+    text-align: center;
+    // transform: scale(1.2,1);
+    margin-top: 5px;
+  }
 }
 
   /*Main--Featured Work*/
