@@ -70,8 +70,9 @@ h4 {
 }
 
 ul{
+  margin: 0;
   padding: 10px;
- background: url(/img/pexels-photo-861191.jpeg) no-repeat center center fixed;
+  background: url(/img/pexels-photo-861191.jpeg) no-repeat center center fixed;
 }
 
 li {
@@ -93,6 +94,18 @@ li {
   }
 }
 
+#about {
+  padding: 45px;
+  font-size: 1.3em;
+  background-color: $primary-color;
+  color: white;
+  h2{
+    margin: 0;
+  }
+  img {
+    border: 5px white solid;
+  }
+}
   /*Footer*/
 footer {
   margin: 0;
@@ -120,14 +133,9 @@ footer {
     align-self: center;
   }
 
-  #jumbotron h2 {
-    position: absolute;
-    top: 10%;
-  }
-
   ul {
     width: 100%;
-    padding: 0 10px 0 0;
+    padding: 0;
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
@@ -135,6 +143,26 @@ footer {
 
   li {
     width: 45%;
+  }
+
+  #about {
+    h2{
+      margin-bottom: 25px;
+    }
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center;
+    p {
+      flex-grow: 1;
+      width: 45%;
+      padding: 0 45px 0 0;
+    }
+    img {
+      flex-grow: 1;
+      width: 45%;
+    }
   }
 }
 

@@ -59,6 +59,7 @@ h4 {
   text-transform: uppercase; }
 
 ul {
+  margin: 0;
   padding: 10px;
   background: url(/img/pexels-photo-861191.jpeg) no-repeat center center fixed; }
 
@@ -76,6 +77,16 @@ li {
     color: white; }
   li p {
     color: white; }
+
+#about {
+  padding: 45px;
+  font-size: 1.3em;
+  background-color: #6a847c;
+  color: white; }
+  #about h2 {
+    margin: 0; }
+  #about img {
+    border: 5px white solid; }
 
 /*Footer*/
 footer {
@@ -100,12 +111,9 @@ footer {
     font-size: 2.5em;
     -ms-flex-item-align: center;
     align-self: center; }
-  #jumbotron h2 {
-    position: absolute;
-    top: 10%; }
   ul {
     width: 100%;
-    padding: 0 10px 0 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -114,7 +122,27 @@ footer {
     -ms-flex-flow: wrap;
     flex-flow: wrap; }
   li {
-    width: 45%; } }
+    width: 45%; }
+  #about h2 {
+    margin-bottom: 25px; }
+  .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .about-content p {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      width: 45%;
+      padding: 0 45px 0 0; }
+    .about-content img {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      width: 45%; } }
 
 @media screen and (min-width: 800px) {
   #jumbotron h2 {
