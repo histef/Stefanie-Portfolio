@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato|Questrial");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff; }
+
+h4, p {
+  font-family: "questrial", sans-serif; }
+
+img {
+  width: 100%; }
+
+/*header*/
+header {
+  background: url(/img/pexels-photo-91884.jpeg) no-repeat center center fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  height: 450px;
+  color: white; }
+
+.logo {
+  grid-column: 1;
+  grid-row: 1;
+  -ms-flex-item-align: start;
+  align-self: start;
+  max-width: 55px;
+  padding: 10px; }
+
+.title-card {
+  background-color: #decead;
+  border: 7px solid #fff;
+  grid-column: 2;
+  grid-row: 2;
+  justify-items: center;
+  color: black;
+  padding: 15px; }
+  .title-card h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "questrial", sans-serif;
+    margin-bottom: 0; }
+  .title-card h3 {
+    font-family: "dancing script", cursive;
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 5px; }
+
+/*Main--Featured Work*/
+h2 {
+  text-align: center;
+  font-family: "dancing script", cursive;
+  font-size: 2.5em; }
+
+h4 {
+  font-size: 1.2em;
+  text-transform: uppercase; }
+
+ul {
+  margin: 0;
+  padding: 10px;
+  background: url(/img/pexels-photo-861191.jpeg) no-repeat center center fixed; }
+
+li {
+  background-color: #685a63;
+  margin: 20px 10px;
+  list-style: none;
+  border: solid #fff 5px;
+  border-radius: 2px;
+  text-align: center; }
+  li img {
+    height: 50%; }
+  li a {
+    text-decoration: none;
+    color: white; }
+  li p {
+    color: white; }
+
+#about {
+  padding: 45px;
+  font-size: 1.3em;
+  background-color: #6a847c;
+  color: white; }
+  #about h2 {
+    margin: 0; }
+  #about img {
+    border: 5px white solid; }
+
+/*Footer*/
+footer {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 2fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.socials {
+  grid-column: 2; }
+  .socials a {
+    padding: 0 10px;
+    font-size: 25px; }
+
+/*Media Queries*/
+@media screen and (min-width: 600px) {
+  .logo {
+    max-width: 100px; }
+  h1 {
+    font-size: 2.5em;
+    -ms-flex-item-align: center;
+    align-self: center; }
+  ul {
+    width: 100%;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap; }
+  li {
+    width: 45%; }
+  #about h2 {
+    margin-bottom: 25px; }
+  .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .about-content p {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      width: 45%;
+      padding: 0 45px 0 0; }
+    .about-content img {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      width: 45%; } }
+
+@media screen and (min-width: 800px) {
+  #jumbotron h2 {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto; }
+  figure {
+    font-size: 1em; }
+  li img {
+    height: 62%; } }
+
+@media screen and (min-width: 1100px) {
+  body {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto; }
+  li {
+    width: 30%; } }
