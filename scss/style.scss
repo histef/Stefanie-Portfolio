@@ -28,7 +28,7 @@ header {
   nav {
     width: 100%;
     a{
-      padding: 5px;
+      padding: 7px;
       background-color: $bg-color;
       color: black;
       text-transform: uppercase;
@@ -42,7 +42,6 @@ header {
 #nav-about {
   transform: rotate(90deg);
   position: absolute;
-  // top: -0px;
   bottom: 250px;
   right: 0px;
 }
@@ -50,8 +49,15 @@ header {
 #nav-fw {
   transform: rotate(-90deg);
   position: absolute;
-  bottom: 250px;
+  bottom: 235px;
   left: -40px;
+}
+
+#nav-contact {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  left: 37%;
 }
 
 .logo {
@@ -123,9 +129,9 @@ li {
 }
 
 #about {
-  padding: 45px;
+  padding: 45px 45px 0 45px;
   font-size: 1.3em;
-  background-color: $primary-color;
+  background-image: linear-gradient($primary-color, $light-green);
   color: white;
   h2{
     margin: 0;
@@ -134,7 +140,44 @@ li {
     border: 5px white solid;
   }
 }
-  /*Footer*/
+
+.skills {
+  color: black;
+  height: 100%;
+  width: 100%;
+  padding: 20px 0;
+  h3 {
+    margin: 0;
+    padding: 20px 0 10px 0;
+    font-family: $accent-font;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .skill-icons {
+      width: 70px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      padding: 10px;
+      p {
+        text-align: center;
+        margin: 7px 0 0 0;
+        font-size: .8em;
+      }
+      .si {
+        margin: auto;
+        font-size: 1.7em;
+      }
+    }
+  }
+}
+
+/*Footer*/
+
 footer {
   margin: 0;
   display: grid;
@@ -145,6 +188,7 @@ footer {
 .socials {
   grid-column: 2;
   a {
+    color: black;
     padding: 0 10px;
     font-size: 25px;
   }
@@ -153,13 +197,17 @@ footer {
 /*Media Queries*/
 @media screen and (min-width: 600px){
   .logo {
-    max-width: 100px;
+    max-width: 65px;
   }
 
   h1 {
     font-size: 2.5em;
     align-self: center;
   }
+
+  #nav-contact {
+  left: 43%;
+}
 
   ul {
     width: 100%;
@@ -201,9 +249,9 @@ footer {
     margin-right: auto;
   }
 
-  figure {
-    font-size: 1em;
-  }
+  #nav-contact {
+  left: 45%;
+}
 
   li img{
     height: 62%;
