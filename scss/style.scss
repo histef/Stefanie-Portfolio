@@ -7,7 +7,7 @@ body {
 }
 
 h4, p {
-  font-family: $secondary-font;
+  font-family: $main-font;
 }
 
 img {
@@ -33,7 +33,7 @@ header {
       color: black;
       text-transform: uppercase;
       text-decoration: none;
-      font-family: $secondary-font;
+      font-family: $main-font;
       font-size: 1.1em;
     }
   }
@@ -79,7 +79,7 @@ header {
   h1 {
     text-align: center;
     text-transform: uppercase;
-    font-family: $secondary-font;
+    font-family: $main-font;
     margin-bottom: 0;
   }
   h3 {
@@ -173,6 +173,29 @@ li {
         font-size: 1.7em;
       }
     }
+  }
+}
+
+.google-form {
+  display: none;
+  margin: auto;
+}
+
+// .show-google-form {
+//   display: block;
+//}
+
+.form-btn {
+  text-align: center;
+  button {
+    background-color: $light-color;
+    margin-bottom: 25px;
+    padding: 10px 25px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: $main-font;
+    font-size: 1.3em;
+       transform: scale(1.1,1);
   }
 }
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato|Questrial");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Questrial");
 body {
   margin: 0;
   padding: 0;
@@ -158,6 +158,23 @@ li {
       .skills .icon-container .skill-icons .si {
         margin: auto;
         font-size: 1.7em; }
+
+.google-form {
+  display: none;
+  margin: auto; }
+
+.form-btn {
+  text-align: center; }
+  .form-btn button {
+    background-color: #decead;
+    margin-bottom: 25px;
+    padding: 10px 25px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: "questrial", sans-serif;
+    font-size: 1.3em;
+    -webkit-transform: scale(1.1, 1);
+    transform: scale(1.1, 1); }
 
 /*Footer*/
 footer {
