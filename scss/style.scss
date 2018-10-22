@@ -14,16 +14,44 @@ img {
   width: 100%;
 }
 
-  /*header*/
+/*header*/
 header {
+  position: relative;
   background: url(../img/pexels-photo-861191.jpeg) no-repeat center center fixed;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
-  height: 450px;
+  height: 500px;
   color: white;
+  nav {
+    width: 100%;
+    a{
+      padding: 5px;
+      background-color: $bg-color;
+      color: black;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: $secondary-font;
+      font-size: 1.1em;
+    }
+  }
+}
+
+#nav-about {
+  transform: rotate(90deg);
+  position: absolute;
+  // top: -0px;
+  bottom: 250px;
+  right: 0px;
+}
+
+#nav-fw {
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 250px;
+  left: -40px;
 }
 
 .logo {
