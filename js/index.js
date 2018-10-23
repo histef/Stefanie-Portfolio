@@ -1,17 +1,15 @@
 
-const formBtn = document.querySelector('button');
+const btn = document.querySelector('button');
 const googleForm = document.querySelector('.google-form');
 
-formBtn.addEventListener('click', openButton);
+btn.addEventListener('click', openButton);
 
 function openButton() {
   if (googleForm.style.display === 'none'){
-  googleForm.style.display = 'block';
+    googleForm.style.display = 'block';
+    btn.textContent = 'Close';
   } else {
     googleForm.style.display = 'none';
+        btn.textContent = 'Contact me';
   }
 };
-
-//toggle show/hide classes
-// OR
-//start as hidden, then if state to display: none, display: block

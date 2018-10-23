@@ -24,7 +24,7 @@ header {
   margin: 0;
   padding: 0;
   height: 500px;
-  color: white;
+  color: set-text-color($bg-color);
   nav {
     width: 100%;
     a{
@@ -35,6 +35,11 @@ header {
       text-decoration: none;
       font-family: $main-font;
       font-size: 1.1em;
+      &:hover {
+        background-color: black;
+        color: set-text-color(black);
+        transition: 1s;
+      }
     }
   }
 }
@@ -181,21 +186,22 @@ li {
   margin: auto;
 }
 
-// .show-google-form {
-//   display: block;
-//}
-
 .form-btn {
   text-align: center;
   button {
-    background-color: $light-color;
     margin-bottom: 25px;
     padding: 10px 25px;
     border: 2px solid black;
     border-radius: 15px;
     font-family: $main-font;
     font-size: 1.3em;
-       transform: scale(1.1,1);
+    transform: scale(1.1,1);
+    &:hover {
+      background-color: $dark-purp;
+      color: set-text-color($dark-purp);
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      transition: 1s;
+    }
   }
 }
 

@@ -20,7 +20,7 @@ header {
   margin: 0;
   padding: 0;
   height: 500px;
-  color: white; }
+  color: #000; }
   header nav {
     width: 100%; }
     header nav a {
@@ -31,6 +31,11 @@ header {
       text-decoration: none;
       font-family: "questrial", sans-serif;
       font-size: 1.1em; }
+      header nav a:hover {
+        background-color: black;
+        color: #fff;
+        -webkit-transition: 1s;
+        transition: 1s; }
 
 #nav-about {
   -webkit-transform: rotate(90deg);
@@ -166,7 +171,6 @@ li {
 .form-btn {
   text-align: center; }
   .form-btn button {
-    background-color: #decead;
     margin-bottom: 25px;
     padding: 10px 25px;
     border: 2px solid black;
@@ -175,6 +179,13 @@ li {
     font-size: 1.3em;
     -webkit-transform: scale(1.1, 1);
     transform: scale(1.1, 1); }
+    .form-btn button:hover {
+      background-color: #685a63;
+      color: #fff;
+      -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      -webkit-transition: 1s;
+      transition: 1s; }
 
 /*Footer*/
 footer {
