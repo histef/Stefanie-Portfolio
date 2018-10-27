@@ -1,7 +1,8 @@
-const gulp         = require('gulp');
-const browserSync  = require('browser-sync').create();
-const sass         = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
+const gulp = require('gulp'),
+      browserSync = require('browser-sync').create(),
+      sass = require('gulp-sass'),
+      autoprefixer = require('gulp-autoprefixer'),
+      imagemin = require('gulp-imagemin');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
@@ -15,6 +16,11 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('image', function(){
+    gulp.src('./img/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('./img'));
+})
 
 // Watch Sass & Serve
 gulp.task('serve', ['sass'], function() {
