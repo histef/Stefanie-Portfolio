@@ -13,3 +13,10 @@ function openButton() {
         btn.textContent = 'Contact me';
   }
 };
+
+// window.onscroll = function() {
+//     var stickyToTopIcon = document.getElementById('scroll-to-top-icon');
+//     if( document.body.scrollTop+document.documentElement.scrollTop > 240)
+//         stickyToTopIcon.className = "sticky";
+//     else stickyToTopIcon.className = "";
+// };

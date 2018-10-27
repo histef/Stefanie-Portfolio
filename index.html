@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="icon" type="image/PNG" href="/img/SC-logo.PNG">
 		<title>SC Portfolio</title>
 	</head>
@@ -13,8 +14,7 @@
 	<body>
 <!--header area-->
 		<header id="header">
-			<img class="logo" src="img/SC-logo.PNG" alt="logo">
-      <div class="title-card">
+      <div class="title-card" data-aos="flip-left">
   			<h1>Stefanie Chin</h1>
   			<h3>Web Developer</h3>
       </div>
@@ -37,8 +37,10 @@
 
 <!--main area: featured work-->
 			<section id="featured-work" name="featured-work">
-				<h2>Featured Work</h2>
-				<ul>
+        <div <div data-aos="fade-right" data-aos-duration="3000">
+				  <h2>Featured Work</h2>
+				</div>
+        <ul>
           <li class="card">
             <h4><a href="https://histef.github.io/memory-game/" target="_blank">Memory Game</a></h4>
             <a href="https://histef.github.io/memory-game/" target="_blank">
@@ -86,14 +88,14 @@
 
       <div id="about" name="about">
         <h2>About Me</h2>
-        <div class="about-content">
+        <div class="about-content" data-aos="zoom-in">
           <p>Hi! I'm a web developer based in Los Angeles. I have a major passion for learning, creativity, efficiency, and simplicity. My "treat yo' self" moments involve coffee shops and specialty donut stores.
           </p>
           <img src="img/pexels-photo-737552.jpeg" alt="aerial beach photo">
         </div>
-              <section class="skills">
-        <h3>Skills</h3>
-          <div class="icon-container">
+        <section class="skills">
+            <h3>Skills</h3>
+          <div class="icon-container" data-aos="fade-up">
             <div class="skill-icons">
               <i class="si fab fa-js-square"></i>
               <p>JavaScript</p>
@@ -146,14 +148,16 @@
         </div>
         <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSdXGgpewEfCx9S-a_pag_C8tnwFHOGgfBg9adtZMg74tnNwUQ/viewform?embedded=true" width="640" height="891" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </section>
-
-      <a href='#header' id="scroll-to-top-icon"><i class="fas fa-arrow-up"></i></a>
+      <div id="scroll-to-top-icon" aria-label="scroll back to top" data-aos="fade-up">
+        <a href='#header'><i class="fas fa-arrow-up" ></i></a>
+      </div>
 		</main>
 
 		<hr>
 
 <!--footer area-->
 		<footer>
+      <img class="logo" src="img/SC-logo.PNG" alt="logo">
 			<p>&copy; Stefanie Chin</p>
 			<div class="socials">
         <a href="https://www.linkedin.com/in/histef" aria-label="go to linkedin profile"><i class="fab fa-linkedin"></i></a>
@@ -162,5 +166,11 @@
 			</div>
 		</footer>
     <script type="text/javascript" src='js/index.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500
+    });
+  </script>
 	</body>
 </html>

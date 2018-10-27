@@ -13,7 +13,8 @@ img {
 /*header*/
 header {
   position: relative;
-  background: url(../img/pexels-photo-861191.jpeg) no-repeat center center fixed;
+  background: url(../img/pexels-photo-91884.jpeg) no-repeat center center fixed;
+  background-position: 15% 60%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -24,19 +25,21 @@ header {
   header nav {
     width: 100%; }
     header nav a {
+      border-radius: 10px;
       padding: 7px;
-      background-color: #fff;
-      color: black;
+      background-color: transparent;
+      color: #decead;
       text-transform: uppercase;
       text-decoration: none;
       font-family: "questrial", sans-serif;
-      font-size: 1.1em; }
+      font-size: 1.2em; }
       header nav a:hover {
         background-color: black;
         color: #fff;
         -webkit-transition: 1s;
         transition: 1s; }
 
+/*nav*/
 #nav-about {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -66,12 +69,12 @@ header {
   padding: 10px; }
 
 .title-card {
-  background-color: #decead;
+  background-color: transparent;
   border: 7px solid #fff;
   grid-column: 2;
   grid-row: 2;
   justify-items: center;
-  color: black;
+  color: white;
   padding: 15px; }
   .title-card h1 {
     text-align: center;
@@ -80,7 +83,7 @@ header {
     margin-bottom: 0; }
   .title-card h3 {
     font-family: "dancing script", cursive;
-    font-size: 1.7em;
+    font-size: 2em;
     text-align: center;
     margin-top: 5px; }
 
@@ -97,7 +100,7 @@ h4 {
 ul {
   margin: 0;
   padding: 10px;
-  background: url(../img/pexels-photo-91884.jpeg) no-repeat center center fixed; }
+  background: url(../img/pexels-photo-861191.jpeg) no-repeat center center fixed; }
 
 li {
   background-color: #685a63;
@@ -113,6 +116,40 @@ li {
     color: white; }
   li p {
     color: white; }
+
+#scroll-to-top-icon {
+  position: fixed;
+  bottom: 80px;
+  right: 20px; }
+  #scroll-to-top-icon .fa-arrow-up {
+    font-size: 3.5em;
+    color: #c19f7c; }
+    #scroll-to-top-icon .fa-arrow-up:hover {
+      -webkit-animation: bounce 1s;
+      animation: bounce 1s;
+      color: #000; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); } }
 
 #about {
   padding: 45px 45px 0 45px;
@@ -196,13 +233,16 @@ li {
 footer {
   margin: 0;
   display: grid;
-  grid-template-columns: 2fr;
+  grid-template-columns: 3fr;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  footer .logo {
+    padding: 0;
+    margin: 0 10px; }
 
 .socials {
-  grid-column: 2; }
+  grid-column: 3; }
   .socials a {
     color: black;
     padding: 0 10px;
@@ -268,3 +308,7 @@ footer {
     margin-right: auto; }
   li {
     width: 30%; } }
+
+@media screen and (min-width: 1400px) {
+  header {
+    background-position: 15% 85%; } }
