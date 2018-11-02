@@ -8,15 +8,10 @@ function openButton() {
   if (googleForm.style.display === 'none'){
     googleForm.style.display = 'block';
     btn.textContent = 'Close';
+    btn.style.marginBottom = "25px";
   } else {
     googleForm.style.display = 'none';
-        btn.textContent = 'Contact me';
+    btn.textContent = 'Contact me';
+    btn.style.marginBottom = "0";
   }
 };
-
-// window.onscroll = function() {
-//     var stickyToTopIcon = document.getElementById('scroll-to-top-icon');
-//     if( document.body.scrollTop+document.documentElement.scrollTop > 240)
-//         stickyToTopIcon.className = "sticky";
-//     else stickyToTopIcon.className = "";
-// };
