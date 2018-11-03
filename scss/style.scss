@@ -6,6 +6,12 @@ body {
   background-color: $bg-color;
 }
 
+h2 {
+  text-align: center;
+  font-family: $accent-font;
+  font-size: 2.9em;
+}
+
 h4, p {
   font-family: $main-font;
 }
@@ -41,7 +47,7 @@ header {
       &:hover {
         background-color: black;
         color: set-text-color(black);
-        transition: 1s;
+        transition: 500ms;
       }
     }
   }
@@ -101,40 +107,101 @@ header {
 }
 
   /*Main--Featured Work*/
-h2 {
-  text-align: center;
-  font-family: $accent-font;
-  font-size: 2.9em;
-}
-
-h4 {
-  font-size: 1.2em;
-  text-transform: uppercase;
-}
-
 ul{
-  margin: 0;
-  padding: 10px;
-  background-color: $dark-purp;
+  // width: 100%;
+  margin: 0 auto 100px auto;
+  padding: 0;
+  // background-color: $dark-purp;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  // align-content: flex-start;
+  justify-content: flex-start;
+  .card {
+    min-width: 365px;
+    height: 50vh;
+    // display: inline-block;
+    position: relative;
+    overflow: hidden;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .projects-content {
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      bottom: -100%;
+      padding: 10;
+      text-align: center;
+      margin: 0;
+      transition: 0.5s;
+    }
+    h4 {
+      font-size: 1.2em;
+      text-transform: uppercase;
+    }
+    &:hover {
+      .projects-content {
+        background: linear-gradient(transparent, black);
+        bottom: 0;
+      }
+    }
+  }
 }
 
-li {
-  background-color: $dark-purp;
-  margin: 20px 10px;
-  list-style: none;
-  border: solid #fff 5px;
-  border-radius: 2px;
-  text-align: center;
-  img {
-    height: 50%;
-  }
-  a {
-  text-decoration: none;
-  color: white;
-  }
-  p {
-    color: white;
-  }
+%shared-img {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fw1 {
+  @extend %shared-img;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)),
+  url(../img/bookshelf.png);
+}
+
+.fw2 {
+  @extend %shared-img;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)),
+  url(../img/memory-game.png);
+}
+
+.fw3 {
+  @extend %shared-img;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)),
+  url(../img/star-wars.png);
+}
+.fw4 {
+  @extend %shared-img;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)),
+  url(../img/frogger.png);
+}
+
+.fw5 {
+  @extend %shared-img;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)),
+  url(../img/PAM.png);
+}
+
+.fw6 {
+  @extend %shared-img;
+  background-image: linear-gradient(
+    rgba(0, 0, 0.8),
+    rgba(0, 0, 0.8)),
+  url(../img/todo-list.png);
 }
 
 #scroll-to-top-icon {
@@ -213,6 +280,7 @@ li {
 
 /*Contact Section*/
 #contact {
+  margin-bottom: 100px;
   h2{
     margin: 30px;
     font-size: 3.3em;
@@ -244,7 +312,7 @@ li {
       background-color: $dark-purp;
       color: set-text-color($dark-purp);
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-      transition: .5s;
+      transition: 500ms;
     }
   }
 }
@@ -290,7 +358,6 @@ footer {
     width: 100%;
     padding: 0;
     display: flex;
-    justify-content: space-around;
     flex-flow: wrap;
   }
 

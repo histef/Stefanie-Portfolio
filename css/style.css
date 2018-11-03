@@ -4,6 +4,11 @@ body {
   padding: 0;
   background-color: #fff; }
 
+h2 {
+  text-align: center;
+  font-family: "dancing script", cursive;
+  font-size: 2.9em; }
+
 h4, p {
   font-family: "questrial", sans-serif; }
 
@@ -36,8 +41,8 @@ header {
       header nav a:hover {
         background-color: black;
         color: #fff;
-        -webkit-transition: 1s;
-        transition: 1s; }
+        -webkit-transition: 500ms;
+        transition: 500ms; }
 
 /*nav*/
 #nav-about {
@@ -88,34 +93,73 @@ header {
     margin-top: 5px; }
 
 /*Main--Featured Work*/
-h2 {
-  text-align: center;
-  font-family: "dancing script", cursive;
-  font-size: 2.9em; }
-
-h4 {
-  font-size: 1.2em;
-  text-transform: uppercase; }
-
 ul {
-  margin: 0;
-  padding: 10px;
-  background-color: #685a63; }
-
-li {
-  background-color: #685a63;
-  margin: 20px 10px;
+  margin: 0 auto 100px auto;
+  padding: 0;
   list-style: none;
-  border: solid #fff 5px;
-  border-radius: 2px;
-  text-align: center; }
-  li img {
-    height: 50%; }
-  li a {
-    text-decoration: none;
-    color: white; }
-  li p {
-    color: white; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  ul .card {
+    min-width: 365px;
+    height: 50vh;
+    position: relative;
+    overflow: hidden; }
+    ul .card a {
+      text-decoration: none;
+      color: white; }
+    ul .card .projects-content {
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      bottom: -100%;
+      padding: 10;
+      text-align: center;
+      margin: 0;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+    ul .card h4 {
+      font-size: 1.2em;
+      text-transform: uppercase; }
+    ul .card:hover .projects-content {
+      background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+      background: linear-gradient(transparent, black);
+      bottom: 0; }
+
+.fw1, .fw2, .fw3, .fw4, .fw5, .fw6 {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.fw1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/bookshelf.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/bookshelf.png); }
+
+.fw2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 128, 128, 0.3)), to(rgba(5, 128, 128, 0.3))), url(../img/memory-game.png);
+  background-image: linear-gradient(rgba(5, 128, 128, 0.3), rgba(5, 128, 128, 0.3)), url(../img/memory-game.png); }
+
+.fw3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 48, 250, 0.4)), to(rgba(25, 48, 250, 0.4))), url(../img/star-wars.png);
+  background-image: linear-gradient(rgba(25, 48, 250, 0.4), rgba(25, 48, 250, 0.4)), url(../img/star-wars.png); }
+
+.fw4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 165, 0, 0.4)), to(rgba(255, 165, 0, 0.4))), url(../img/frogger.png);
+  background-image: linear-gradient(rgba(255, 165, 0, 0.4), rgba(255, 165, 0, 0.4)), url(../img/frogger.png); }
+
+.fw5 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 128, 128, 0.6)), to(rgba(5, 128, 128, 0.6))), url(../img/PAM.png);
+  background-image: linear-gradient(rgba(5, 128, 128, 0.6), rgba(5, 128, 128, 0.6)), url(../img/PAM.png); }
+
+.fw6 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 128, 0.8)), to(rgba(0, 0, 128, 0.8))), url(../img/todo-list.png);
+  background-image: linear-gradient(rgba(0, 0, 128, 0.8), rgba(0, 0, 128, 0.8)), url(../img/todo-list.png); }
 
 #scroll-to-top-icon {
   position: fixed;
@@ -202,9 +246,11 @@ li {
         font-size: 1.7em; }
 
 /*Contact Section*/
-#contact h2 {
-  margin: 30px;
-  font-size: 3.3em; }
+#contact {
+  margin-bottom: 100px; }
+  #contact h2 {
+    margin: 30px;
+    font-size: 3.3em; }
 
 .form-container {
   background: url(../img/pexels-photo-861191.jpeg) no-repeat center center fixed;
@@ -229,8 +275,8 @@ li {
       color: #fff;
       -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
       box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-      -webkit-transition: .5s;
-      transition: .5s; }
+      -webkit-transition: 500ms;
+      transition: 500ms; }
 
 /*Footer*/
 footer {
@@ -267,8 +313,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
     -ms-flex-flow: wrap;
     flex-flow: wrap; }
   li {
