@@ -142,24 +142,24 @@ ul {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/bookshelf.png); }
 
 .fw2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 128, 128, 0.3)), to(rgba(5, 128, 128, 0.3))), url(../img/memory-game.png);
-  background-image: linear-gradient(rgba(5, 128, 128, 0.3), rgba(5, 128, 128, 0.3)), url(../img/memory-game.png); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/memory-game.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/memory-game.png); }
 
 .fw3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 48, 250, 0.4)), to(rgba(25, 48, 250, 0.4))), url(../img/star-wars.png);
-  background-image: linear-gradient(rgba(25, 48, 250, 0.4), rgba(25, 48, 250, 0.4)), url(../img/star-wars.png); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/star-wars.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/star-wars.png); }
 
 .fw4 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 165, 0, 0.4)), to(rgba(255, 165, 0, 0.4))), url(../img/frogger.png);
-  background-image: linear-gradient(rgba(255, 165, 0, 0.4), rgba(255, 165, 0, 0.4)), url(../img/frogger.png); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/frogger.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/frogger.png); }
 
 .fw5 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 128, 128, 0.6)), to(rgba(5, 128, 128, 0.6))), url(../img/PAM.png);
-  background-image: linear-gradient(rgba(5, 128, 128, 0.6), rgba(5, 128, 128, 0.6)), url(../img/PAM.png); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/PAM.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/PAM.png); }
 
 .fw6 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 128, 0.8)), to(rgba(0, 0, 128, 0.8))), url(../img/todo-list.png);
-  background-image: linear-gradient(rgba(0, 0, 128, 0.8), rgba(0, 0, 128, 0.8)), url(../img/todo-list.png); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/todo-list.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/todo-list.png); }
 
 #scroll-to-top-icon {
   position: fixed;
