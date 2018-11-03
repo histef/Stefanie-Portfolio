@@ -152,6 +152,9 @@ ul{
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3))
 }
 
 .icon::before {
@@ -164,17 +167,11 @@ ul{
 
 .fw1 {
   @extend %shared-img;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)),
-  url(../img/bookshelf.png);
+  background-image: url(../img/bookshelf.png);
 }
 
 .fw2 {
   @extend %shared-img;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3));
   background-color: $light-green;
     &::before {
     content: "\f669";
@@ -192,17 +189,11 @@ ul{
 
 .fw3 {
   @extend %shared-img;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)),
-  url(../img/memory-game.png);
+  background-image: url(../img/memory-game.png);
 }
 
 .fw4 {
   @extend %shared-img;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3));
   background-color: $dark-purp;
   &::before {
     content: "\f37f";
@@ -220,17 +211,11 @@ ul{
 
 .fw5 {
   @extend %shared-img;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)),
-  url(../img/frogger.png);
+  background-image: url(../img/frogger.png);
 }
 
 .fw6 {
   @extend %shared-img;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3));
   background-color: $light-color;
   &::before {
     content: "\f03a";

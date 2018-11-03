@@ -136,7 +136,9 @@ ul {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); }
 
 .icon::before {
   display: inline-block;
@@ -145,12 +147,9 @@ ul {
   text-rendering: auto; }
 
 .fw1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/bookshelf.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/bookshelf.png); }
+  background-image: url(../img/bookshelf.png); }
 
 .fw2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-color: #b9cab6; }
   .fw2::before {
     content: "\f669";
@@ -166,12 +165,9 @@ ul {
     top: 40%; }
 
 .fw3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/memory-game.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/memory-game.png); }
+  background-image: url(../img/memory-game.png); }
 
 .fw4 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-color: #685a63; }
   .fw4::before {
     content: "\f37f";
@@ -187,12 +183,9 @@ ul {
     top: 40%; }
 
 .fw5 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/frogger.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/frogger.png); }
+  background-image: url(../img/frogger.png); }
 
 .fw6 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-color: #decead; }
   .fw6::before {
     content: "\f03a";
