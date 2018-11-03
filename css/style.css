@@ -94,7 +94,7 @@ header {
 
 /*Main--Featured Work*/
 ul {
-  margin: 0 auto 100px auto;
+  margin-bottom: 100px;
   position: relative;
   padding: 0;
   list-style: none;
@@ -103,11 +103,12 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   ul .card {
-    min-width: 365px;
+    width: 33.3%;
+    min-width: 350px;
     height: 50vh;
     position: relative;
     overflow: hidden; }
@@ -144,7 +145,8 @@ ul {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
-  text-rendering: auto; }
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased; }
 
 .fw1 {
   background-image: url(../img/bookshelf.png); }
@@ -346,14 +348,6 @@ footer {
     align-self: center; }
   #nav-contact {
     left: 43%; }
-  ul {
-    width: 100%;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: wrap;
-    flex-flow: wrap; }
   #about h2 {
     margin-bottom: 25px; }
   .about-content {

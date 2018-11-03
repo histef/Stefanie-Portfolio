@@ -108,15 +108,16 @@ header {
 
   /*Main--Featured Work*/
 ul{
-  margin: 0 auto 100px auto;
+  margin-bottom: 100px;
   position: relative;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   .card {
-    min-width: 365px;
+    width: 33.3%;
+    min-width: 350px;
     height: 50vh;
     position: relative;
     overflow: hidden;
@@ -162,7 +163,7 @@ ul{
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  // -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 .fw1 {
@@ -312,7 +313,6 @@ ul{
     margin: 30px;
     font-size: 3.3em;
   }
-
 }
 
 .form-container {
@@ -377,22 +377,11 @@ footer {
   }
 
   #nav-contact {
-  left: 43%;
-}
-
-  ul {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-flow: wrap;
+    left: 43%;
   }
 
-  // li {
-  //   width: 45%;
-  // }
-
   #about {
-    h2{
+    h2 {
       margin-bottom: 25px;
     }
   }
@@ -420,12 +409,8 @@ footer {
   }
 
   #nav-contact {
-  left: 45%;
-}
-
-  // li img{
-  //   height: 62%;
-  // }
+    left: 45%;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -434,14 +419,10 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-
-  // li{
-  //   width: 30%;
-  // }
 }
 
 @media screen and (min-width: 1400px) {
   header {
-      background-position: 15% 85%;
+    background-position: 15% 85%;
   }
 }
