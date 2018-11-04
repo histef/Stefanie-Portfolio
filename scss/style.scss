@@ -116,7 +116,7 @@ ul{
   flex-wrap: wrap;
   justify-content: center;
   .card {
-    width: 33.3%;
+    width: 100%;
     min-width: 350px;
     height: 50vh;
     position: relative;
@@ -168,7 +168,10 @@ ul{
 
 .fw1 {
   @extend %shared-img;
-  background-image: url(../img/bookshelf.png);
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)),
+  url(../img/bookshelf.png);
 }
 
 .fw2 {
@@ -190,7 +193,11 @@ ul{
 
 .fw3 {
   @extend %shared-img;
-  background-image: url(../img/memory-game.png);
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)),
+  url(../img/memory-game.png);
 }
 
 .fw4 {
@@ -212,7 +219,11 @@ ul{
 
 .fw5 {
   @extend %shared-img;
-  background-image: url(../img/frogger.png);
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)),
+  url(../img/frogger.png);
 }
 
 .fw6 {
@@ -380,6 +391,12 @@ footer {
     left: 43%;
   }
 
+  .card {
+    width: 80%;
+    min-width: 170px;
+    max-width: 400px;
+  }
+
   #about {
     h2 {
       margin-bottom: 25px;
@@ -418,6 +435,10 @@ footer {
     width: 1100px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .card {
+    width: 33.3%;
+    max-width: 365px;
   }
 }
 
