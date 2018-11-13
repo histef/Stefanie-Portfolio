@@ -25,7 +25,7 @@ img {
 header {
   position: relative;
   background:
-  url(../img/pexels-photo-91884.jpeg) no-repeat center center fixed;
+  url(../img/green-ocean-sm.jpeg) no-repeat center center fixed;
   background-position: 15% 60%;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -327,7 +327,7 @@ ul{
 }
 
 .form-container {
-    background: url(../img/pexels-photo-861191.jpeg) no-repeat center center fixed;
+    background: url(../img/crashing-waves-sm.jpeg) no-repeat center center fixed;
     padding: 40px 0;
 }
 
@@ -419,10 +419,19 @@ footer {
 }
 
 @media screen and (min-width: 800px){
-  #jumbotron h2 {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+  // #jumbotron h2 {
+  //   width: 800px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
+  header {
+    background:
+      url(../img/green-ocean-L.jpg) no-repeat center center fixed;
+  }
+
+  .form-container {
+    background:
+      url(../img/crashing-waves-L.jpg) no-repeat center center fixed;
   }
 
   #nav-contact {
