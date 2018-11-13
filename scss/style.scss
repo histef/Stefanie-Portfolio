@@ -26,6 +26,7 @@ header {
   position: relative;
   background:
   url(../img/green-ocean-sm.jpeg) no-repeat center center fixed;
+  background-size: cover;  //super important for all devices!
   background-position: 15% 60%;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -419,11 +420,6 @@ footer {
 }
 
 @media screen and (min-width: 800px){
-  // #jumbotron h2 {
-  //   width: 800px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
   header {
     background:
       url(../img/green-ocean-L.jpg) no-repeat center center fixed;
