@@ -26,7 +26,7 @@ header {
   position: relative;
   background:
   url(../img/green-ocean-sm.jpeg) no-repeat center center fixed;
-  background-size: 100%;  //super important for all devices!
+  background-size: cover;  //super important for all devices!
   background-position: 15% 60%;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -329,7 +329,7 @@ ul{
 
 .form-container {
     background: url(../img/crashing-waves-sm.jpeg) no-repeat center center fixed;
-    background-size: 100%;
+    background-size: cover;
     padding: 40px 0;
 }
 
