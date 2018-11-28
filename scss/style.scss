@@ -25,7 +25,7 @@ img {
 header {
   position: relative;
   background:
-  url(../img/green-ocean-sm.jpeg) no-repeat center center fixed;
+  url(../img/green-ocean-sm.jpeg) no-repeat center center;
   background-size: cover;  //super important for all devices!
   background-position: 15% 60%;
   display:grid;
@@ -106,6 +106,9 @@ header {
     // transform: scale(1.2);
   }
 }
+
+// a tag set display: block
+// wrap :before in a tag;
 
   /*Main--Featured Work*/
 ul{
@@ -328,7 +331,7 @@ ul{
 }
 
 .form-container {
-    background: url(../img/crashing-waves-sm.jpeg) no-repeat center center fixed;
+    background: url(../img/crashing-waves-sm.jpeg) no-repeat center center;
     background-size: cover;
     padding: 40px 0;
 }

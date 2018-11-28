@@ -19,7 +19,7 @@ img {
 /*header*/
 header {
   position: relative;
-  background: url(../img/green-ocean-sm.jpeg) no-repeat center center fixed;
+  background: url(../img/green-ocean-sm.jpeg) no-repeat center center;
   background-size: cover;
   background-position: 15% 60%;
   display: grid;
@@ -298,7 +298,7 @@ ul {
     font-size: 3.3em; }
 
 .form-container {
-  background: url(../img/crashing-waves-sm.jpeg) no-repeat center center fixed;
+  background: url(../img/crashing-waves-sm.jpeg) no-repeat center center;
   background-size: cover;
   padding: 40px 0; }
 
