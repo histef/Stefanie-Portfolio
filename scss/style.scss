@@ -126,6 +126,8 @@ ul{
     position: relative;
     overflow: hidden;
     a {
+      display: block;
+      height: 100%;
       text-decoration: none;
       color: white;
     }
