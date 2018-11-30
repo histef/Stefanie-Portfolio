@@ -1,19 +1,18 @@
-let cacheName = 'offline v1 cache'; //sets versions for our cache
+let cacheName = 'offline v2 cache'; //sets versions for our cache
 let cacheFiles = [
-  '/',
   'index.html',
   'css/style.css',
   'js/index.js',
-  'img/beach-aerial.jpeg',
-  'img/bookshelf.png',
-  'img/crashing-waves-L.jpg',
-  'img/crashing-waves-sm.jpeg',
-  'img/frogger.jpg',
-  'img/green-ocean-L.jpg',
-  'img/green-ocean-sm.jpeg',
-  'img/memory-game.png',
-  'img/SC-logo.png',
-  'SC-logo.ico'
+  // 'img/beach-aerial.jpeg',
+  // 'img/bookshelf.png',
+  // 'img/crashing-waves-L.jpg',
+  // 'img/crashing-waves-sm.jpeg',
+  // 'img/frogger.jpg',
+  // 'img/green-ocean-L.jpg',
+  // 'img/green-ocean-sm.jpeg',
+  // 'img/memory-game.png',
+  // 'img/SC-logo.png',
+  // 'SC-logo.ico'
 ]
 
 self.addEventListener('install', event => {
