@@ -1,7 +1,7 @@
 let cacheName = 'offline v1 cache'; //sets versions for our cache
 let cacheFiles = [
   '/',
-  '/index.html',
+  'index.html',
   'css/style.css',
   'js/index.js',
   'img/beach-aerial.jpeg',
@@ -12,7 +12,7 @@ let cacheFiles = [
   'img/green-ocean-L.jpg',
   'img/green-ocean-sm.jpeg',
   'img/memory-game.png',
-  'img/SC-logo.png'
+  'SC-logo.png'
 ]
 
 self.addEventListener('install', event => {
