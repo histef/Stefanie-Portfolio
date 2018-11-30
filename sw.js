@@ -12,7 +12,8 @@ let cacheFiles = [
   'img/green-ocean-L.jpg',
   'img/green-ocean-sm.jpeg',
   'img/memory-game.png',
-  'SC-logo.png'
+  'img/SC-logo.png',
+  'SC-logo.ico'
 ]
 
 self.addEventListener('install', event => {
