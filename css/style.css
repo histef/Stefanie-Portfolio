@@ -3,7 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  color: #2b2c2d; }
 
 h2 {
   text-align: center;
@@ -28,7 +29,7 @@ header {
   margin: 0;
   padding: 0;
   height: 500px;
-  color: #000; }
+  color: #2b2c2d; }
   header nav {
     width: 100%; }
     header nav a {
@@ -218,7 +219,7 @@ ul {
     #scroll-to-top-icon .fa-arrow-up:hover {
       -webkit-animation: bounce 1s;
       animation: bounce 1s;
-      color: #000; }
+      color: #2b2c2d; }
 
 @-webkit-keyframes bounce {
   0%, 20%, 60%, 100% {
@@ -243,7 +244,7 @@ ul {
     transform: translateY(-10px); } }
 
 #about {
-  padding: 45px 45px 0 45px;
+  padding: 45px 45px 55px 45px;
   font-size: 1.3em;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#6a847c), to(#b9cab6));
   background-image: linear-gradient(#6a847c, #b9cab6);
@@ -254,7 +255,7 @@ ul {
     border: 5px white solid; }
 
 .skills {
-  color: black;
+  color: #2b2c2d;
   height: 100%;
   width: 100%;
   padding: 20px 0; }
@@ -311,6 +312,7 @@ ul {
 .form-btn {
   text-align: center; }
   .form-btn button {
+    color: #2b2c2d;
     padding: 10px 25px;
     border: 2px solid black;
     border-radius: 15px;
@@ -341,7 +343,7 @@ footer {
 .socials {
   grid-column: 3; }
   .socials a {
-    color: black;
+    color: #2b2c2d;
     padding: 0 10px;
     font-size: 25px; }
 

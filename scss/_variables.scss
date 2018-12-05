@@ -15,7 +15,7 @@ $dark-purp: #685a63; //purple
 //Functions
 @function set-text-color($bg-color){
   @if(lightness($bg-color) > 50){
-    @return #000;
+    @return #2b2c2d;
   } @else {
     @return #fff;
   }

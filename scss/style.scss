@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: $bg-color;
+  color: set-text-color($bg-color);
 }
 
 h2 {
@@ -276,7 +277,7 @@ ul{
 }
 
 #about {
-  padding: 45px 45px 0 45px;
+  padding: 45px 45px 55px 45px;
   font-size: 1.3em;
   background-image: linear-gradient($primary-color, $light-green);
   color: white;
@@ -289,7 +290,7 @@ ul{
 }
 
 .skills {
-  color: black;
+  color: set-text-color($bg-color);
   height: 100%;
   width: 100%;
   padding: 20px 0;
@@ -347,6 +348,7 @@ ul{
   text-align: center;
   button {
     // margin-bottom: 25px;
+    color: set-text-color($bg-color);
     padding: 10px 25px;
     border: 2px solid black;
     border-radius: 15px;
@@ -377,7 +379,7 @@ footer {
 .socials {
   grid-column: 3;
   a {
-    color: black;
+    color: set-text-color($bg-color);
     padding: 0 10px;
     font-size: 25px;
   }
