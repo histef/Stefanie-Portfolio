@@ -390,9 +390,9 @@ footer {
   #nav-contact {
     left: 45%; } }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1150px) {
   body {
-    width: 1100px;
+    width: 1150px;
     margin-left: auto;
     margin-right: auto; }
   .card {
